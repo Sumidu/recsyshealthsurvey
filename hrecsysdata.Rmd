@@ -1,0 +1,74 @@
+---
+title: RecSys Data Analysis
+author: André Calero Valdez, Mark Bukowski, Robert Farkas
+date: March 10, 2019
+bibliography: bibliography.bib
+output:
+  bookdown::html_document2:
+    toc: true
+    toc_depth: 3
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
+    number_sections: true
+    #theme: readable
+    fig_caption: true
+    dev: png
+    df_print: paged
+    code_folding: hide
+---
+
+```{r setup, include=F}
+Sys.setlocale("LC_ALL", 'en_US.UTF-8') # generally helpful
+knitr::asis_output("\U2500  \U2665  \U2666  \U2663") # Required for output of Jamovi functions
+
+library(tidyverse)
+library(haven)
+library(labelled)
+library(sjlabelled)
+library(jmv)
+library(apastats)
+library(corrplot)
+library(ggsignif)
+library(scales)
+library(ggthemes)
+library(likert)
+library(psych)
+library(jtools)
+library(apaTables)
+library(papaja)
+library(sjmisc)
+```
+
+# Introduction
+```{r, fig.cap="TEst 123"}
+for (i in 1:10) {
+  
+  print(paste0(i, "Rows"))
+}
+
+x <- seq(1,100)
+y <- sample(seq(1,100), 100)
+
+d <- data.frame(x=x, y=y)
+qplot(x,y)
+d
+```
+
+## Test
+# Method
+
+
+## Used packages
+To create this analysis we have used several R packages [@tidyverse].
+
+# Data Analysis
+
+# Restuls
+
+# Discussion
+
+
+# References
+
+
